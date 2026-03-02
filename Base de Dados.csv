@@ -1,0 +1,299 @@
+id_sku;cod_barras_ean;descricao;categoria;marca;fornecedor;ncm;preco_custo;lucro;icms;ipi;st;valor_liquido;estoque_atual;estoque_minimo;unidade_medida;peso;largura;altura;profundidade;localizacao;ativo;data_cadastro
+    ;;;;;;;;;;;;;;;;;;;;;;
+1234;;camiseta azul roxo amarelo 345139 rts;Geral;aa;Samsung;;1000.0;0.07;0.0;0.0;0.0;1000.07;0.0;5.0;;;;;;; Sim;11/02/2026
+325010002;;MP-2001 BLOCO ADESIVO ANOTACAO 37.5X50MM NEON 4 CORES 4X100FOLHAS;Geral;MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.;;2.89;0.951;0.61815;0.0;0.0;445.915;0.0;5.0;CX;;;;;; Sim;11/02/2026
+325010003;;MP-2010 BLOCO ADESIVO ANOTACAO 75X75MM AMARELO 1X100 FOLHAS;Geral;MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.;;1.33;0.399;0.26;0.0;0.0;1.989;0.0;5.0;CX;;;;;; Sim;11/02/2026
+309020001;;MP-612 CANETA MARCA TEXTO AMARELA CAIXA COM 12 CHANFRADA 4MM;Geral;MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.;;6.98;2.367;1.54;0.0;0.0;10.887;0.0;5.0;CX;;;;;; Sim;11/02/2026
+309020002;;MP-612 CANETA MARCA TEXTO LARANJA CAIXA COM 12 CHANFRADA 4MM;Geral;MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.;;6.98;2.367;1.54;0.0;0.0;10.887;0.0;5.0;CX;;;;;; Sim;11/02/2026
+309020003;;MP-612 CANETA MARCA TEXTO ROSA CAIXA COM 12 CHANFRADA 4MM;Geral;MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.;;6.98;2.367;1.54;0.0;0.0;10.887;0.0;5.0;CX;;;;;; Sim;11/02/2026
+309020005;;MP-612 CANETA MARCA TEXTO VERDE CAIXA COM 12 CHANFRADA 4MM;Geral;MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.;;6.98;2.367;1.54;0.0;0.0;10.887;0.0;5.0;CX;;;;;; Sim;11/02/2026
+309020004;;MP-612 CANETA MARCA TEXTO AZUL CAIXA COM 12 CHANFRADA 4MM;Geral;MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.;;6.98;2.367;1.54;0.0;0.0;10.887;0.0;5.0;CX;;;;;; Sim;11/02/2026
+304010001; ; MA MP-300 GRAMPEADOR DE METAL PEQUENO 11.5CM ATE 25 FOLHAS;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;4.4;1.32;19.5;13;0;6.29;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+304010002; ; MA MP-301 GRAMPEADOR DE METAL MEDIO 13.5CM ATE 25 FOLHAS;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;6.15;1.85;19.5;13;0;8.8;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+304010003; ; MA MP-305 GRAMPEADOR DE METAL MINI ATE 16 FOLHAS;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;2.7;0.81;19.5;13;0;3.86;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+304010005; ; MA MP-400 GRAMPEADOR DE METAL GRANDE 19.5CM ATE 25 FOLHAS;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;17.98;5.39;19.5;13;0;25.71;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+303010002; ; MA MP-GRAMPO GALVANIZADO CAIXA COM 5000 26/6;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;2.1;0.63;19.5;6.5;0;2.87;;5.0; CX; ; ; ; ; ; Sim; 13/02/2026
+309050009; ; MA MP-619 PINCEL QUADRO BRANCO AZUL CAIXA COM 12 RECARREGAVEL;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;10.76;3.23;19.5;13;0;12.16; ;5.0; CX; ; ; ; ; ; Sim; 13/02/2026
+316010001; ; MA MP-200 BORRACHA BRANCA TPR COM CAPA AZUL CAIXA COM 24 10X20X40;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;10.08;3.02;19.5;0;0;13.1;;5.0; CX; ; ; ; ; ; Sim; 13/02/2026
+315010004; ; MA MP-1203 APONTADOR DE METAL PET COM 48 UNIDADES;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;20.9;6.27;19.5;6.5;0;28.53;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+304010007; ; MA MP-801 PERFURADOR DE METAL PEQUENO ATE 20 FOLHAS;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;8.06;2.42;19.5;13;0;11.53;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+301010024; ; MA MP-1086 CALCULADORA MANUAL 12 DIGITOS;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;11.95;3.59;19.5;9.75;0;16.71;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+315010011; ; MA MP-1208 APONTADOR PLASTICO GRANDE TRANSPARENTE COM DEPOSITO CAIXA COM 24 UNIDADES;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;9.26;2.78;19.5;6.5;0;12.64;;5.0; CX; ; ; ; ; ; Sim; 13/02/2026
+325010007; ; MA MP-2020 BLOCO ADESIVO ANOTACAO 76X102MM AMARELO 1X100FOLHAS;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;1.7;0.51;19.5;9.75;0;2.38;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+310010005; ; MA MP-436 FITA CORRETIVA 5MM X 6MTS CAIXA COM 12;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;21.59;6.48;19.5;6.5;0;29.47;;5.0; CX; ; ; ; ; ; Sim; 13/02/2026
+328010001; ; MA MP-3100 APAGADOR DE QUADRO COM IMA COR AZUL;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;2.16;0.65;19.5;0;0;2.81;;5.0; UN; ; ; ; ; ; Sim; 13/02/2026
+305010004; ; MA MP-109 EXTRATOR DE GRAMPOS CX C/12 - ESPATULA NIQUELADO;Geral; MASTERPRINT;Masterprint - Grupomaster - Com. Imp. Exp. Ltda.; ;9.24;2.77;19.5;13;0;13.21;;5.0; CX; ; ; ; ; ; Sim; 13/02/2026
+7,90E+12;;Esf. Azul 1.0mm (Caixa com 50);Geral;SCRIT;Setric;;27.51;11.79;19.5;;0;39.3;0;5.0;CX;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Preta 1.0mm (Caixa com 50);Geral;SCRIT;Setric;;27.51;11.79;19.5;;0;39.3;0;5.0;CX;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Vermelha 1.0mm (Caixa com 50);Geral;SCRIT;Setric;;27.51;11.79;19.5;;0;39.3;0;5.0;CX;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Azul 0,7mm (Caixa com 50);Geral;SCRIT;Setric;;27.51;11.79;19.5;;0;39.3;0;5.0;CX;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Preta 0,7mm (Caixa com 50);Geral;SCRIT;Setric;;27.51;11.79;19.5;;0;39.3;0;5.0;CX;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Vermelha 0,7mm (Caixa com 50);Geral;SCRIT;Setric;;27.51;11.79;19.5;;0;39.3;0;5.0;CX;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Azul 0,7mm;Geral;NEOTIP;Setric;;48.19;20.65;19.5;;0;68.84;6;5.0;PT;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Preta 0,7mm;Geral;NEOTIP;Setric;;48.19;20.65;19.5;;0;68.84;6;5.0;PT;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Vermelha 0,7mm;Geral;NEOTIP;Setric;;48.19;20.65;19.5;;0;68.84;6;5.0;PT;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Azul 1.0mm;Geral;NEOTIP;Setric;;48.19;20.65;19.5;;0;68.84;6;5.0;PT;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Preta 1.0mm;Geral;NEOTIP;Setric;;48.19;20.65;19.5;;0;68.84;6;5.0;PT;;;;;;Sim;19/02/2026
+7,90E+12;;Esf. Vermelha 1.0mm;Geral;NEOTIP;Setric;;48.19;20.65;19.5;;0;68.84;6;5.0;PT;;;;;;Sim;19/02/2026
+7,91E+12;;268/1-50 Esf. Retratil 0,7mm Grip Emborrachado Cores Sortidas;Geral;PALETTE;Setric;;428.03;183.45;19.5;;0;611.48;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. Cores Sortidas ( Azul, Preta, Vermelha ) 0.7mm;Geral;PENTONIC;Setric;;83.79;35.91;19.5;;0;119.7;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. Cores Sortidas;Geral;PENTONIC;Setric;;83.79;35.91;19.5;;0;119.7;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;0,5mm Esferografica Cores Sortidas;Geral;LOLLIPOP;Setric;;50.67;21.72;19.5;;0;72.39;0;5.0;PT;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. Retratil Sortida 0,7mm;Geral;PENTONIC RT;Setric;;147.21;63.09;19.5;;0;210.3;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Esferografica Retratil 0,7mm Cores Sortidas;Geral;BPX RT;Setric;;84.2;36.09;19.5;;0;120.29;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Esferografica 0,7mm Sortidas;Geral;YOLO;Setric;;54.53;23.37;19.5;;0;77.9;10;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. 0,7mm Azul (Caixa com 50);Geral;NEXT;Setric;;27.14;11.63;19.5;;0;38.77;20;5.0;CX;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. 0,7mm Preta (Caixa com 50);Geral;NEXT;Setric;;27.14;11.63;19.5;;0;38.77;20;5.0;CX;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. 0,7mm Vermelha (Caixa com 50);Geral;NEXT;Setric;;27.14;11.63;19.5;;0;38.77;20;5.0;CX;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. 0,7 mm Display c/50;Geral;SPIRO GEL;Setric;;82.47;35.35;19.5;;0;117.82;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Esferografica 0,7mm Cores Sortidas;Geral;CLUB;Setric;;44.27;18.97;19.5;;0;63.24;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Next Colors Caneta Esf Pt C/50 Sort;Geral;NEXT;Setric;;27.14;11.63;19.5;;0;38.77;10;5.0;PT;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. Cores Sortidas;Geral;PENTONIC CLR;Setric;;151.2;64.8;19.5;;0;216;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Caneta Esferografica 0,7mm Cores Sortidas;Geral;VORTEX;Setric;;59.5;25.5;19.5;;0;85;0;5.0;DP;;;;;;Sim;19/02/2026
+7,91E+12;;Esf. Retratil 0,7mm Cores Sortidas;Geral;CLICK RT;Setric;;66.14;28.35;19.5;;0;94.49;6;5.0;PT;;;;;;Sim;19/02/2026
+7,91E+12;;Esferografica 0,7mm Cores Sortidas;Geral;BPX GLOW;Setric;;80.29;34.41;19.5;;0;114.7;0;5.0;DP;;;;;;Sim;19/02/2026
+48701;7,91E+12; Marca Texto Metalico Ouro - CX com 6; LUMINI METALLIC; CIS;Setric; ; 10.19; 4.37; 13.00;;0; 14.55;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+48702;7,91E+12; Marca Texto Metalico Prata - CX com 6; LUMINI METALLIC; CIS;Setric; ; 10.19; 4.37; 13.00;;0; 14.55;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+48703;7,91E+12; Marca Texto Metalico Bronze - CX com 6; LUMINI METALLIC; CIS;Setric; ; 10.19; 4.37; 13.00;;0; 14.55;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+48704;7,91E+12; Marca Texto Metalico Rosa - CX com 6; LUMINI METALLIC; CIS;Setric; ; 10.19; 4.37; 13.00;;0; 14.55;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+48705;7,91E+12; Marca Texto Metalico Roxa - CX com 6; LUMINI METALLIC; CIS;Setric; ; 10.19; 4.37; 13.00;;0; 14.55;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+48706;7,91E+12; Marca Texto Metalico Verde - CX com 6; LUMINI METALLIC; CIS;Setric; ; 10.19; 4.37; 13.00;;0; 14.55;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+48707;7,91E+12; Marca Texto Cores Metalicas Sortidas; LUMINI METALLIC; CIS;Setric; ; 13.58; 5.82; 13.00;;0; 19.40;72;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+48708;7,91E+12; Marca Texto Cores Metalicas Sortidas - Dp com 48; LUMINI METALLIC; CIS;Setric; ; 81.49; 34.93; 13.00;;0; 116.42;6;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+48709;7,91E+12; Marca Texto Metalico Azul - CX com 6; LUMINI METALLIC; CIS;Setric; ; 10.19; 4.37; 13.00;;0; 14.55;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+48710;7,91E+12; Marca Texto Metalico Laranja - CX com 6; LUMINI METALLIC; CIS;Setric; ; 10.19; 4.37; 13.00;;0; 14.55;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+48711;7,91E+12; Marca Texto Cores Metalicas Sortidas; LUMINI METALLIC; CIS;Setric; ; 6.79; 2.91; 13.00;;0; 9.70;144;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57402;7,91E+12; 70/137 Marca Texto Nature colors - CX com 10; BOSS NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+57403;7,91E+12; 70/163 Marca Texto Nature colors - CX com 10; BOSS NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+57404;7,91E+12; 70/165 Marca Texto Nature colors - CX com 10; BOSS NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+57405;7,91E+12; 70/175 Marca Texto Nature colors - CX com 10; BOSS NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+57406;7,91E+12; 70/186 Marca Texto Nature colors - CX com 10; BOSS NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+57407;7,91E+12; 70/193 Marca Texto Nature colors - CX com 10; BOSS NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+57408;7,91E+12; 70/46 Marca Texto Nature colors - CX com 10; BOSS NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+57409;7,91E+12; 70/4-2-3 Marca Texto Nature colors - EST com 4; BOSS NATURE; STABILO;Setric; ; 24.64; 10.56; 13.00;;0; 35.20;50;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+57410;7,91E+12; 70/4-2-5 Marca Texto Nature colors - EST com 4; BOSS NATURE; STABILO;Setric; ; 24.64; 10.56; 13.00;;0; 35.20;50;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+57411;7,91E+12; 70/30-2-2 Marca Texto Nature colors - DP com 30; BOSS NATURE; STABILO;Setric; ; 175.78; 75.33; 13.00;;0; 251.11;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+57412;7,91E+12; 70/15-2-46 Marca Texto Nature colors - DP com 15; BOSS NATURE; STABILO;Setric; ; 87.88; 37.67; 13.00;;0; 125.55;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+57739;7,91E+12; Marca texto Lumini Flex bl c/2 AM; LUMINI FLEX; CIS;Setric; ; 2.96; 1.27; 13.00;;0; 4.23;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57740;7,91E+12; Marca texto Lumini Flex bl c/2AM+RS; LUMINI FLEX; CIS;Setric; ; 2.96; 1.27; 13.00;;0; 4.23;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57741;7,91E+12; Marca texto Lumini Flex bl c/2 AM+AZ; LUMINI FLEX; CIS;Setric; ; 2.96; 1.27; 13.00;;0; 4.23;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57742;7,91E+12; Marca texto Lumini Flex bl c/2 AM+VD; LUMINI FLEX; CIS;Setric; ; 2.96; 1.27; 13.00;;0; 4.23;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57743;7,91E+12; Marca texto Lumini Flex bl c/2 AM+LR; LUMINI FLEX; CIS;Setric; ; 2.96; 1.27; 13.00;;0; 4.23;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57759;7,91E+12; 70/137 Marca Texto Nature colors bl. c/1; BOSS NATURE; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57760;7,91E+12; 70/163 Marca Texto Nature colors bl. c/1; BOSS NATURE; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57761;7,91E+12; 70/165 Marca Texto Nature colors bl. c/1; BOSS NATURE; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57762;7,91E+12; 70/175 Marca Texto Nature colors bl. c/1; BOSS NATURE; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57763;7,91E+12; 70/186 Marca Texto Nature colors bl. c/1; BOSS NATURE; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57764;7,91E+12; 70/193 Marca Texto Nature colors bl. c/1; BOSS NATURE; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57765;7,91E+12; 70/46 Marca Texto Nature colors bl. c/1; BOSS NATURE; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+57873;7,91E+12; Marca Texto Neon em Fita 3 Metros Cores Sortidas Blister - CX com 12; LUMINI TAPE; CIS;Setric; ; 44.06; 18.88; 13.00;;0; 62.94;24;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+57880;7,91E+12; Marca Texto Pastel em Fita Metros Cores Sortidas Blister - CX com 12; LUMINI TAPE; CIS;Setric; ; 44.06; 18.88; 13.00;;0; 62.94;24;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58414;7,91E+12; Marca Texto Neon Cores Sortidas - EST com 5; LUMINI SCENTS NEON; CIS;Setric; ; 7.67; 3.29; 13.00;;0; 10.95;144;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58415;7,91E+12; Marca Texto Pastel Cores Sortidas - EST com 5; LUMINI SCENTS PASTEL; CIS;Setric; ; 7.67; 3.29; 13.00;;0; 10.95;144;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58418;4,01E+12; 275/137 Marca Texto Mud G - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58419;4,01E+12; 275/163 Marca Texto Earth G - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58420;4,01E+12; 275/165 Marca Texto Umber - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58421;4,01E+12; 275/175 Marca Texto Sienna - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58422;4,01E+12; 275/186 Marca Texto Beige - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58423;4,01E+12; 275/193 Marca Texto Warm G - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58424;4,01E+12; 275/18-02-5 - Marca Texto Cores Sortidas - EST com 18; SWING COOL; STABILO;Setric; ; 138.45; 59.33; 13.00;;0; 197.78;5;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58425;4,01E+12; 275/4-09 - Marca Texto Cores Sortidas - EST com 4; SWING COOL; STABILO;Setric; ; 28.08; 12.04; 13.00;;0; 40.12;100;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58426;4,01E+12; 275/6-09 - Marca Texto Cores Sortidas - EST com 6; SWING COOL; STABILO;Setric; ; 42.14; 18.06; 13.00;;0; 60.20;100;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58427;4,01E+12; 275/16-9 Marca Texto Nature Colors c/ cores Sotidas - DP com 16; SWING COOL; STABILO;Setric; ; 107.01; 45.86; 13.00;;0; 152.87;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58428;4,01E+12; 70/240-02 Marca Texto Cores Sort. - DP com 240; BOSS; STABILO;Setric; ; 1406.09; 602.61; 13.00;;0; 2008.70;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58471;7,91E+12; Marca Texto Arco-Iris Em Fita BL C/1 - DP com 12; LUMINI RAINBOW; CIS;Setric; ; 50.26; 21.54; 9.75;;0; 71.80;24;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58477;4,01E+12; 7023-01-5-20 Marca Texto Cores Sortidas - Arty - EST com 23; BOSS; STABILO;Setric; ; 147.60; 63.26; 13.00;;0; 210.86;5;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58478;7,91E+12; Marca Texto Swype Cores Sortidas - DP com 36; SWYPE; CIS;Setric; ; 84.67; 36.29; 13.00;;0; 120.96;8;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58479;7,91E+12; Marca Texto Swype Cores Sortidas - EST com 5; SWYPE; CIS;Setric; ; 11.76; 5.04; 13.00;;0; 16.80;120;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58480;7,91E+12; Marca Texto Swype Azul - CX com 10; SWYPE; CIS;Setric; ; 23.52; 10.08; 13.00;;0; 33.60;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58481;7,91E+12; Marca Texto Swype Rosa - CX com 10; SWYPE; CIS;Setric; ; 23.52; 10.08; 13.00;;0; 33.60;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58482;7,91E+12; Marca Texto Swype Verde - CX com 10; SWYPE; CIS;Setric; ; 23.52; 10.08; 13.00;;0; 33.60;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58483;7,91E+12; Marca Texto Swype Laranja - CX com 10; SWYPE; CIS;Setric; ; 23.52; 10.08; 13.00;;0; 33.60;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58484;7,91E+12; Marca Texto Swype Amarelo - CX com 10; SWYPE; CIS;Setric; ; 23.52; 10.08; 13.00;;0; 33.60;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58521;4,01E+12; 07/137-11 Marca Texto Mini Nature Colors - CX com 10; BOSS MINI NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58522;4,01E+12; 07/163-11 Marca Texto Mini Nature Colors - CX com 10; BOSS MINI NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58523;4,01E+12; 07/165-11 Marca Texto Mini Nature Colors - CX com 10; BOSS MINI NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58524;4,01E+12; 07/175-11 Marca Texto Mini Nature Colors - CX com 10; BOSS MINI NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58525;4,01E+12; 07/186-11 Marca Texto Mini Nature Colors - CX com 10; BOSS MINI NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58526;4,01E+12; 07/193-11 Marca Texto Mini Nature Colors - CX com 10; BOSS MINI NATURE; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58527;4,01E+12; 07/50-11-1 Marca Texto Mini Nature Colors - DP com 50; BOSS MINI NATURE; STABILO;Setric; ; 292.95; 125.55; 13.00;;0; 418.50;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58528;4,01E+12; 07/24 Marca Texto Mini Amarelo - CX com 10; BOSS MINI; STABILO;Setric; ; 52.71; 22.59; 13.00;;0; 75.30;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58529;4,01E+12; 07/31 Marca Texto Mini Azul - CX com 10; BOSS MINI; STABILO;Setric; ; 52.71; 22.59; 13.00;;0; 75.30;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58530;4,01E+12; 07/33 Marca Texto Mini Verde - CX com 10; BOSS MINI; STABILO;Setric; ; 52.71; 22.59; 13.00;;0; 75.30;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58531;4,01E+12; 07/54 Marca Texto Mini Laranja - CX com 10; BOSS MINI; STABILO;Setric; ; 52.71; 22.59; 13.00;;0; 75.30;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58532;4,01E+12; 07/56 Marca Texto Mini Rosa - CX com 10; BOSS MINI; STABILO;Setric; ; 52.71; 22.59; 13.00;;0; 75.30;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58533;4,01E+12; 07/5-2-01 Marca Texto Mini Cores Sortidas - EST com 5; BOSS MINI; STABILO;Setric; ; 26.36; 11.30; 13.00;;0; 37.65;100;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58534;4,01E+12; 07/50-1 Marca Texto Mini Cores Sortidas - DP com 50; BOSS MINI; STABILO;Setric; ; 263.55; 112.95; 13.00;;0; 376.50;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58595;7,91E+12; Marca Texto Neon Cores Sortidas - DP com 36; LUMINI SCENTS NEON; CIS;Setric; ; 55.19; 23.65; 13.00;;0; 78.84;6;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58596;7,91E+12; Marca Texto Pastel Cores Sortidas - DP com 36; LUMINI SCENTS PASTEL; CIS;Setric; ; 55.19; 23.65; 13.00;;0; 78.84;6;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58623;7,91E+12; Marca Texto Retratil Cores Sortidas - EST com 5; LUMINI RT; CIS;Setric; ; 15.75; 6.75; 13.00;;0; 22.50;288;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58624;7,91E+12; Marca Texto Retratil Cores Sortidas - DP com 18; LUMINI RT; CIS;Setric; ; 56.70; 24.30; 13.00;;0; 81.00;36;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58625;7,91E+12; Marca Texto Retratil Azul - CX com 12; LUMINI RT; CIS;Setric; ; 37.80; 16.20; 13.00;;0; 54.00;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58626;7,91E+12; Marca Texto Retratil Verde - CX com 12; LUMINI RT; CIS;Setric; ; 37.80; 16.20; 13.00;;0; 54.00;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58627;7,91E+12; Marca Texto Retratil Amarelo - CX com 12; LUMINI RT; CIS;Setric; ; 37.80; 16.20; 13.00;;0; 54.00;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58628;7,91E+12; Marca Texto Retratil Coral - CX com 12; LUMINI RT; CIS;Setric; ; 37.80; 16.20; 13.00;;0; 54.00;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58629;7,91E+12; Marca Texto Retratil Rosa - CX com 12; LUMINI RT; CIS;Setric; ; 37.80; 16.20; 13.00;;0; 54.00;96;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+58638;7,91E+12; Marca Texto Mini (Amarelo + Rosa); BOSS MINI; STABILO;Setric; ; 11.31; 4.85; 13.00;;0; 16.15;0;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+58639;7,91E+12; Marca Texto Mini (Amarelo + Azul); BOSS MINI; STABILO;Setric; ; 11.31; 4.85; 13.00;;0; 16.15;0;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+58640;7,91E+12; Marca Texto Mini (Amarelo + Verde); BOSS MINI; STABILO;Setric; ; 11.31; 4.85; 13.00;;0; 16.15;0;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+58641;7,91E+12; Marca Texto Mini (Amarelo + Laranja); BOSS MINI; STABILO;Setric; ; 11.31; 4.85; 13.00;;0; 16.15;0;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+58642;7,91E+12; Marca Texto Mini Nature Colors (137/165); BOSS MINI NATURE; STABILO;Setric; ; 12.53; 5.37; 13.00;;0; 17.90;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+58643;7,91E+12; Marca Texto Mini Nature Colors (186/163); BOSS MINI NATURE; STABILO;Setric; ; 12.53; 5.37; 13.00;;0; 17.90;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+58644;7,91E+12; Marca Texto Mini Nature Colors (193/175); BOSS MINI NATURE; STABILO;Setric; ; 12.53; 5.37; 13.00;;0; 17.90;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+58658;4,01E+12; 7004-3 Marca Texto Cores Sortidas - EST com 4; BOSS; STABILO;Setric; ; 26.95; 11.55; 13.00;;0; 38.50;100;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58694;7,91E+12; Marca Texto Retratil Cores Sortidas - DP com 18; LUMINI SCENTS RT; CIS;Setric; ; 65.52; 28.08; 13.00;;0; 93.60;48;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+58695;7,91E+12; Marca Texto Retratil Cores Sortidas - EST com 6; LUMINI SCENTS RT; CIS;Setric; ; 20.99; 9.00; 13.00;;0; 29.99;144;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+58882;7,91E+12; Marca Texto Arco-Iris Em Fita Bl c/1; LUMINI RAINBOW; CIS;Setric; ; 4.19; 1.79; 13.00;;0; 5.98;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+58998;7,91E+12; Marca Texto Swype Amarelo Bl c/1; SWYPE; CIS;Setric; ; 2.68; 1.15; 13.00;;0; 3.83;0;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+58999;7,91E+12; Marca Texto Swype Azul Bl c/1; SWYPE; CIS;Setric; ; 2.68; 1.15; 13.00;;0; 3.83;24;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59001;7,91E+12; Marca Texto Swype Laranja Bl c/1; SWYPE; CIS;Setric; ; 2.68; 1.15; 13.00;;0; 3.83;24;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59002;7,91E+12; Marca Texto Swype Rosa Bl c/1; SWYPE; CIS;Setric; ; 2.68; 1.15; 13.00;;0; 3.83;0;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59003;7,91E+12; Marca Texto Swype Verde Bl c/1; SWYPE; CIS;Setric; ; 2.68; 1.15; 13.00;;0; 3.83;24;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59004;7,91E+12; Marca Texto Retratil Amarelo Bl c/1; LUMINI RT; CIS;Setric; ; 3.59; 1.54; 13.00;;0; 5.13;0;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59005;7,91E+12; Marca Texto Retratil Azul Bl c/1; LUMINI RT; CIS;Setric; ; 3.59; 1.54; 13.00;;0; 5.13;24;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59006;7,91E+12; Marca Texto Retratil Verde Bl c/1; LUMINI RT; CIS;Setric; ; 3.59; 1.54; 13.00;;0; 5.13;0;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59007;7,91E+12; Marca Texto Retratil Coral Bl c/1; LUMINI RT; CIS;Setric; ; 3.59; 1.54; 13.00;;0; 5.13;0;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59008;7,91E+12; Marca Texto Retratil Rosa Bl c/1; LUMINI RT; CIS;Setric; ; 3.59; 1.54; 13.00;;0; 5.13;24;5.0; UN; ; ; ; ; ; Sim; 19/02/2026
+59088;4,01E+12; 70/128 Marca Texto Nature colors - CX com 10; BOSS NATURE WF; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+59089;4,01E+12; 70/132 Marca Texto Nature colors - CX com 10; BOSS NATURE WF; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+59090;4,01E+12; 70/162 Marca Texto Nature colors - CX com 10; BOSS NATURE WF; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+59091;4,01E+12; 70/250 Marca Texto Nature colors - CX com 10; BOSS NATURE WF; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+59092;4,01E+12; 70/4-1-103-5 Marca Texto Nature colors - EST com 4; BOSS NATURE WF; STABILO;Setric; ; 24.64; 10.56; 13.00;;0; 35.20;50;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+59093;4,01E+12; 70/15-6 Marca Texto Nature colors - DP com 15; BOSS NATURE WF; STABILO;Setric; ; 87.88; 37.67; 13.00;;0; 125.55;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+59094;4,01E+12; 7010-3-5 Marca Texto Nature colors - DP com 10; BOSS NATURE WF; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;5;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+330501;7,91E+12; 275/48-1 Marca Texto Cores Sortidas - DP com 48; SWING COOL; STABILO;Setric; ; 321.03; 137.59; 13.00;;0; 458.62;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+330502;7,91E+12; 275/48-1 Marca Texto Pastel c/ cores Sortidas - DP com 48; SWING COOL; STABILO;Setric; ; 321.03; 137.59; 13.00;;0; 458.62;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+330504;7,91E+12; 275/18-1 Marca Texto Cores Sortidas ( Fashion Edition ) - Est com 18; SWING COOL; STABILO;Setric; ; 138.44; 59.33; 13.00;;0; 197.78;30;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+330600;7,90E+12; 275/6 Marca Texto Cores Sortidas - EST com 6; SWING COOL; STABILO;Setric; ; 40.13; 17.20; 13.00;;0; 57.33;100;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+330601;4,01E+12; 275/06-01 Marca Texto Cores Sortidas - CX com 6; SWING COOL; STABILO;Setric; ; 40.13; 17.20; 13.00;;0; 57.33;10;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+330700;7,90E+12; 275/24 Marca Texto Amarelo - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+330701;7,91E+12; 275 - Marca Texto Bl c/ 1 Cores Sortidas - CX com 24; SWING COOL; STABILO;Setric; ; 171.76; 73.61; 13.00;;0; 245.37;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+330800;7,90E+12; 275/31 Marca Texto Azul - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+330900;7,90E+12; 275/33 Marca Texto Verde - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+331000;7,90E+12; 275/56 Marca Texto Rosa - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+331100;7,90E+12; 275/54 Marca Texto Laranja - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+331200;7,90E+12; 70/120-2 Marca Texto Cores Sortidas - DP com 120; BOSS; STABILO;Setric; ; 703.12; 301.34; 13.00;;0; 1004.45;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+482600;7,90E+12; 72/24 Marca Texto Amarelo - CX com 10; NEON; STABILO;Setric; ; 49.96; 21.41; 13.00;;0; 71.37;25;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+482601;7,90E+12; 72/24 Marca Texto Amarelo; NEON; STABILO;Setric; ; 5.35; 2.29; 13.00;;0; 7.64;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+482700;7,90E+12; 72/33 Marca Texto Verde Claro - CX com 10; NEON; STABILO;Setric; ; 49.96; 21.41; 13.00;;0; 71.37;25;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+482701;7,90E+12; 72/33 Marca Texto Verde Claro; NEON; STABILO;Setric; ; 5.35; 2.29; 13.00;;0; 7.64;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+482800;7,90E+12; 72/54 Marca Texto Laranja - CX com 10; NEON; STABILO;Setric; ; 49.96; 21.41; 13.00;;0; 71.37;25;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+482801;7,90E+12; 72/54 Marca Texto Laranja; NEON; STABILO;Setric; ; 5.35; 2.29; 13.00;;0; 7.64;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+482900;7,90E+12; 72/56 Marca Texto Rosa ( Pink ) - CX com 10; NEON; STABILO;Setric; ; 49.96; 21.41; 13.00;;0; 71.37;25;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+482901;7,90E+12; 72/56 Marca Texto Rosa ( Pink ); NEON; STABILO;Setric; ; 5.35; 2.29; 13.00;;0; 7.64;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+483002;7,91E+12; 76/24 Marca Texto Amarelo - CX com 10; Shine; STABILO;Setric; ; 55.41; 23.75; 13.00;;0; 79.15;25;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+483003;7,91E+12; 76/33 Marca Texto Verde - CX com 10; Shine; STABILO;Setric; ; 55.41; 23.75; 13.00;;0; 79.15;25;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+483004;7,91E+12; 76/54 Marca Texto Laranja - CX com 10; Shine; STABILO;Setric; ; 55.41; 23.75; 13.00;;0; 79.15;25;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+483005;7,91E+12; 76/56 Marca Texto Rosa - CX com 10; Shine; STABILO;Setric; ; 55.41; 23.75; 13.00;;0; 79.15;25;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+483007;7,91E+12; 76/45-1 Marca Texto Cores Sortidas - DP com 45; Shine; STABILO;Setric; ; 285.73; 122.46; 13.00;;0; 408.19;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+527437;7,91E+12; Marca Texto Amarelo - CX com 12; LUMINI INK; CIS;Setric; ; 37.37; 16.01; 13.00;;0; 53.38;72;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527438;7,91E+12; Marca Texto Verde - CX com 12; LUMINI INK; CIS;Setric; ; 37.37; 16.01; 13.00;;0; 53.38;72;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527439;7,91E+12; Marca Texto Laranja - CX com 12; LUMINI INK; CIS;Setric; ; 37.37; 16.01; 13.00;;0; 53.38;72;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527440;7,91E+12; Marca Texto Rosa - CX com 12; LUMINI INK; CIS;Setric; ; 37.37; 16.01; 13.00;;0; 53.38;72;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527441;7,91E+12; Marca Texto Azul - CX com 12; LUMINI INK; CIS;Setric; ; 37.37; 16.01; 13.00;;0; 53.38;72;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527442;7,91E+12; Marca Texto Roxo - CX com 12; LUMINI INK; CIS;Setric; ; 37.37; 16.01; 13.00;;0; 53.38;72;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527443;7,91E+12; Marca Texto Cores Sortidas - Est com 6; LUMINI INK; CIS;Setric; ; 18.68; 8.01; 13.00;;0; 26.69;144;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+527444;7,91E+12; Marca Texto Cores Sortidas - Dp com 36; LUMINI INK; CIS;Setric; ; 112.09; 48.04; 13.00;;0; 160.14;40;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+527454;7,91E+12; Marca Texto Amarelo Bl c/1; LUMINI INK; CIS;Setric; ; 3.55; 1.52; 13.00;;0; 5.07;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527455;7,91E+12; Marca Texto Verde Bl c/1; LUMINI INK; CIS;Setric; ; 3.55; 1.52; 13.00;;0; 5.07;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527456;7,91E+12; Marca Texto Laranja Bl c/1; LUMINI INK; CIS;Setric; ; 3.55; 1.52; 13.00;;0; 5.07;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527457;7,91E+12; Marca Texto Rosa Bl c/1; LUMINI INK; CIS;Setric; ; 3.55; 1.52; 13.00;;0; 5.07;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527458;7,91E+12; Marca Texto Azul Bl c/1; LUMINI INK; CIS;Setric; ; 3.55; 1.52; 13.00;;0; 5.07;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527459;7,91E+12; Marca Texto Roxo Bl c/1; LUMINI INK; CIS;Setric; ; 3.55; 1.52; 13.00;;0; 5.07;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527460;7,91E+12; Marca Texto CIS VISTA Blister com 1 amarelo; VISTA; CIS;Setric; ; 0.97; 0.42; 13.00;;0; 1.39;12;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527461;7,91E+12; Marca Texto CIS VISTA Blister com 1 verde; VISTA; CIS;Setric; ; 0.97; 0.42; 13.00;;0; 1.39;12;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527462;7,91E+12; Marca Texto CIS VISTA Blister com 1 laranja; VISTA; CIS;Setric; ; 0.97; 0.42; 13.00;;0; 1.39;12;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527463;7,91E+12; Marca Texto CIS VISTA Blister com 1 rosa; VISTA; CIS;Setric; ; 0.97; 0.42; 13.00;;0; 1.39;12;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527600;7,90E+12; 70/113 Marca Texto Azul - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527601;7,91E+12; 70/113 Marca Texto Azul bl c/1 - CX com 24; BOSS Pastel; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527602;7,91E+12; 70/113 Marca Texto Azul; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527603;7,91E+12; 70/116 Marca Texto Verde; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527604;7,91E+12; 70/126 Marca Texto Pessego; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527605;7,91E+12; 70/129 Marca Texto Rosa; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527606;7,91E+12; 70/144 Marca Texto Amarelo; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527607;7,91E+12; 70/155 Marca Texto Lilas; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527614;7,91E+12; 70/158 Marca Texto Fuchsia; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527615;7,91E+12; 70/194 Marca Texto Cinza; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527616;7,91E+12; 70/125 Marca Texto Laranja Palha; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527617;7,91E+12; 70/112 Marca Texto Azul Nevoa; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+527700;7,90E+12; 70/116 Marca Texto Verde - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527701;7,91E+12; 70/116 Marca Texto Verde bl c/1 - CX com 24; BOSS Pastel; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527702;7,91E+12; 70/125 Marca Texto Laranja Palha - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527703;7,91E+12; 70/112 Marca Texto Azul Nevoa - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527704;7,91E+12; 70/158 Marca Texto Fuchsia - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527705;7,91E+12; 70/194 Marca Texto Cinza - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527800;7,90E+12; 70/126 Marca Texto Pessego - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527801;7,91E+12; 70/126 Marca Texto Pessego bl c/1 - CX com 24; BOSS Pastel; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527900;7,90E+12; 70/129 Marca Texto Rosa - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+527901;7,91E+12; 70/129 Marca Texto Rosa bl c/1 - CX com 24; BOSS Pastel; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+528000;7,90E+12; 70/144 Marca Texto Amarelo - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+528001;7,91E+12; 70/144 Marca Texto Amarelo bl c/1 - CX com 24; BOSS Pastel; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+528100;7,90E+12; 70/155 Marca Texto Lilas - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+528101;7,91E+12; 70/155 Marca Texto Lilas bl c/1 - CX com 24; BOSS Pastel; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+543824;7,91E+12; 76/24 Marca Texto Amarelo; Shine; STABILO;Setric; ; 5.93; 2.54; 13.00;;0; 8.47;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+543825;7,91E+12; 76/33 Marca Texto Verde; Shine; STABILO;Setric; ; 5.93; 2.54; 13.00;;0; 8.47;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+543826;7,91E+12; 76/54 Marca Texto Laranja; Shine; STABILO;Setric; ; 5.93; 2.54; 13.00;;0; 8.47;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+543827;7,91E+12; 76/56 Marca Texto Rosa; Shine; STABILO;Setric; ; 5.93; 2.54; 13.00;;0; 8.47;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+562104;7,91E+12; Marca Texto Cores Sortidas - Est com 4; LUMINI INK; CIS;Setric; ; 15.30; 6.56; 13.00;;0; 21.85;24;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+568900;7,91E+12; 275/40 Marca Texto Vermelho - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+569000;7,91E+12; 275/51 Marca Texto Turqueza - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+569100;7,91E+12; 275/55 marca Texto Lilas - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+576900;7,91E+12; 275/144-8 Marca Texto Pastel Amarelo - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577000;7,91E+12; 275/126-8 Marca Texto Pastel Cor Pessego - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577100;7,91E+12; 275/116-8 Marca Texto Pastel Cor Verde - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577200;7,91E+12; 275/129-8 Marca Texto Pastel Cor Rosa - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577300;7,91E+12; 275/113-8 Marca Texto Pastel Cor Azul - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577301;7,91E+12; 275/111 Marca Texto Pastel Cor Azul - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577302;7,91E+12; 275/133 Marca Texto Pastel Cor Limao - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577303;7,91E+12; 275/140 Marca Texto Pastel Cor Coral - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577304;7,91E+12; 275/150 Marca Texto Pastel Cor Cereja - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577305;7,91E+12; 275/125 Marca Texto Laranja Palha - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577306;7,91E+12; 275/158 Marca Texto Fuchsia - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577307;7,91E+12; 275/194 Marca Texto Cinza - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577308;7,91E+12; 275/4-08-02 Marca Texto Pastel c/ cores Sotidas - Est com 4; SWING COOL; STABILO;Setric; ; 26.25; 11.25; 13.00;;0; 37.50;100;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+577313;7,91E+12; 275/112 Marca Texto Azul Nevoa - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577400;7,91E+12; 275/155-8 Marca Texto Pastel Cor Lilas - CX com 10; SWING COOL; STABILO;Setric; ; 66.89; 28.67; 13.00;;0; 95.55;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+577500;7,91E+12; 275/6-08 Marca Texto Pastel c/ cores Sotidas - Est com 6; SWING COOL; STABILO;Setric; ; 42.14; 18.06; 13.00;;0; 60.20;100;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+577501;7,91E+12; 275/4-08-01 Marca Texto Cores Sortidas - Est com 4; SWING COOL; STABILO;Setric; ; 28.08; 12.04; 13.00;;0; 40.12;100;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+577600;7,91E+12; 275/16-8 Marca Texto Pastel c/ cores Sotidas - DP com 16; SWING COOL; STABILO;Setric; ; 107.01; 45.86; 13.00;;0; 152.87;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+580900;7,91E+12; 7015-01-5 Marca Texto ( 9 Cores Fluo + 6 Cores Pasteis ) - DP com 15; BOSS; STABILO;Setric; ; 101.50; 43.50; 13.00;;0; 144.99;30;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+764400;7,91E+12; 70/133 Marca Texto Limao - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+764401;7,91E+12; 70/133 Marca Texto Limao; BOSS Pastel; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+764500;7,91E+12; 70/150 Marca Texto Rosa Cereja - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+764600;7,91E+12; 70/111 Marca Texto Azul Nublado - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+764700;7,91E+12; 70/140 Marca Texto Coral - CX com 10; BOSS Pastel; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1131801;7,91E+12; 70/45-1 Marca Texto Cores Sortidas - DP com 45; BOSS; STABILO;Setric; ; 263.72; 113.02; 13.00;;0; 376.74;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+1132000;7,90E+12; 70/24 Marca Texto Amarelo - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1132002;7,90E+12; 70/24 Marca Texto Amarelo; BOSS; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1132003;7,90E+12; 70/56 Marca Texto Rosa; BOSS; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1132004;7,90E+12; 70/54 Marca Texto Laranja; BOSS; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1132005;7,90E+12; 70/40 Marca Texto Vermelho; BOSS; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1132006;7,90E+12; 70/51 Marca Texto Verde Escuro; BOSS; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1132007;7,90E+12; 70/31 Marca Texto Azul; BOSS; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1132010;7,90E+12; 70/55 Marca Texto Violeta; BOSS; STABILO;Setric; ; 6.27; 2.69; 13.00;;0; 8.96;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1132012;7,90E+12; 15/704-70 Marca Texto Cores Sort. c/4 - EST com 4; BOSS; STABILO;Setric; ; 24.64; 10.56; 13.00;;0; 35.20;50;5.0; EST; ; ; ; ; ; Sim; 19/02/2026
+1136100;7,90E+12; 70/160 Marca Texto Cores Sort. - DP com 160; BOSS; STABILO;Setric; ; 921.31; 394.85; 13.00;;0; 1316.16;1;5.0; DP; ; ; ; ; ; Sim; 19/02/2026
+1142200;7,90E+12; 70/54 Marca Texto Laranja - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142300;7,90E+12; 70/31 Marca Texto Azul - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142302;7,90E+12; 70/24 Marca Texto Amarelo bl c/1 - CX com 24; BOSS; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142303;7,90E+12; 70/33 Marca Texto Verde Claro bl c/1 - CX com 24; BOSS; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142304;7,90E+12; 70/51 Marca Texto Verde Escuro bl c/1 - CX com 24; BOSS; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142305;7,90E+12; 70/54 Marca Texto Laranja bl c/1 - CX com 24; BOSS; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142306;7,90E+12; 70/40 Marca Texto Vermelho bl c/1 - CX com 24; BOSS; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142307;7,90E+12; 70/55 Marca Texto Violeta bl c/1 - CX com 24; BOSS; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142308;7,90E+12; 70/56 Marca Texto Rosa bl c/1 - CX com 24; BOSS; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142309;7,90E+12; 70/58 Marca Texto Lilas bl c/1 - CX com 24; BOSS; STABILO;Setric; ; 150.45; 64.48; 13.00;;0; 214.93;12;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142400;7,90E+12; 70/56 Marca Texto Rosa - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142500;7,90E+12; 70/58 Marca Texto Rosa Escuro - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142600;7,90E+12; 70/55 Marca Texto Violeta - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142700;7,90E+12; 70/51 Marca Texto Verde Escuro - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142800;7,90E+12; 70/40 Marca Texto Vermelho - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1142900;7,90E+12; 70/33 Marca Texto Verde Claro - CX com 10; BOSS; STABILO;Setric; ; 58.59; 25.11; 13.00;;0; 83.70;50;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1197700;7,90E+12; 71/24 Marca Texto Amarelo - CX com 5; LUMINATOR; STABILO;Setric; ; 70.17; 30.07; 13.00;;0; 100.24;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1197701;7,90E+12; 71/24 Marca Texto Amarelo; LUMINATOR; STABILO;Setric; ; 15.02; 6.44; 13.00;;0; 21.45;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1197705;7,90E+12; 71/54 Marca Texto Laranja; LUMINATOR; STABILO;Setric; ; 15.02; 6.44; 13.00;;0; 21.45;24;5.0; BL; ; ; ; ; ; Sim; 19/02/2026
+1197800;7,90E+12; 71/33 Marca Texto Verde - CX com 5; LUMINATOR; STABILO;Setric; ; 70.17; 30.07; 13.00;;0; 100.24;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1199200;7,90E+12; 71/41 Marca Texto Azul - CX com 5; LUMINATOR; STABILO;Setric; ; 70.17; 30.07; 13.00;;0; 100.24;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1199300;7,90E+12; 71/40 Marca Texto Vermelho - CX com 5; LUMINATOR; STABILO;Setric; ; 70.17; 30.07; 13.00;;0; 100.24;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1199400;7,90E+12; 71/54 Marca Texto Laranja - CX com 5; LUMINATOR; STABILO;Setric; ; 70.17; 30.07; 13.00;;0; 100.24;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
+1199500;7,90E+12; 71/56 Marca Texto Rosa - CX com 5; LUMINATOR; STABILO;Setric; ; 70.17; 30.07; 13.00;;0; 100.24;60;5.0; CX; ; ; ; ; ; Sim; 19/02/2026
