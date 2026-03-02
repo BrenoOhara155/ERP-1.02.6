@@ -1,30 +1,23 @@
 import streamlit as st
 import pandas as pd
-import plotly.express as px  # Adicionado para os gráficos do Dashboard
+import plotly.express as px
 from datetime import datetime
 import os
 import io
 import unicodedata
 from docx import Document
 from docx.shared import Pt
-# from docx2pdf import convert # Nota: convert costuma exigir Word instalado, use com cautela em servidores
 from num2words import num2words
 
-# --- CONFIGURAÇÃO DA PÁGINA ---
 st.set_page_config(page_title="Sistema de Gestão", layout="wide")
-
-# --- CARREGAMENTO INICIAL ---
 try:
     dados_produtos = pd.read_csv("Base de Dados.csv", sep=";", encoding="latin-1")
     dados_pessoas = pd.read_csv("Base_Pessoas.csv", sep=";", encoding="latin-1")
 except FileNotFoundError:
     st.error("Bases de dados não encontradas. Verifique os arquivos CSV.")
-
-# --- INICIALIZAÇÃO DO ESTADO ---
 if "pagina" not in st.session_state:
-    st.session_state.pagina = "Dashboard" # Dashboard definido como página inicial
+    st.session_state.pagina = "Dashboard"
 
-# --- ESTILIZAÇÃO CSS ---
 st.markdown("""
 <style>
     /* Botões do Menu Lateral */
@@ -58,7 +51,6 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# --- FUNÇÃO AUXILIAR DO MENU ---
 def gerar_botao_menu(label):
     if st.session_state.pagina == label:
         st.markdown('<div class="active-btn">', unsafe_allow_html=True)
@@ -71,11 +63,8 @@ def gerar_botao_menu(label):
             st.session_state.pagina = label
             st.rerun()
 
-# --- MENU LATERAL (NAVEGAÇÃO) ---
 with st.sidebar:
     st.title("ERP")
-    
-    # Botão de Dashboard no Topo (Destaque Principal)
     gerar_botao_menu("Dashboard")
     
     st.divider()
@@ -95,31 +84,21 @@ with st.sidebar:
     with st.expander("Relatórios", expanded=(st.session_state.pagina == "Formalizacao")):
         gerar_botao_menu("Formalizacao")
 
-# Define a variável para controle de fluxo
 pagina = st.session_state.pagina
-
-# --- A PARTIR DAQUI COMEÇAM OS IF PAGINA == ... ---
 
 if pagina == "Cadastrar Produto":
     st.title("Cadastro de Produtos")
 
-    # --- 1. LÓGICA DE CARREGAMENTO DE FORNECEDORES ---
-    # Começa com uma lista padrão caso o arquivo não exista ou esteja vazio
     lista_fornecedores = ["Outros"] 
     arquivo_pessoas = "Base_Pessoas.csv"
 
     if os.path.exists(arquivo_pessoas):
         try:
-            # Tenta ler UTF-8, se falhar tenta Latin-1
             try:
                 df_pessoas = pd.read_csv(arquivo_pessoas, sep=";")
             except UnicodeDecodeError:
                 df_pessoas = pd.read_csv(arquivo_pessoas, sep=";", encoding="latin1")
-            
-            # Remove espaços em branco dos nomes das colunas (segurança)
             df_pessoas.columns = df_pessoas.columns.str.strip()
-
-            # Se as colunas existirem, filtra e preenche a lista
             if "nome_razao" in df_pessoas.columns and "categoria" in df_pessoas.columns:
                 filtro = df_pessoas[
                     df_pessoas["categoria"].astype(str).str.contains("Fornecedor|Ambos", case=False, na=False)
@@ -127,15 +106,10 @@ if pagina == "Cadastrar Produto":
                 nomes_banco = sorted(filtro["nome_razao"].unique().tolist())
                 
                 if nomes_banco:
-                    # Adiciona "Outros" ao final da lista caso precise cadastrar alguém rápido
                     lista_fornecedores = nomes_banco + ["Outros"]
         except Exception:
-            pass # Se der erro, mantêm a lista padrão ["Outros"]
-
-    # Criamos abas para separar o cadastro Manual da Importacao
+            pass
     aba1, aba2 = st.tabs(["Cadastro Manual", "Importacao em Massa (CSV)"])
-
-    # --- ABA 1: CADASTRO MANUAL ---
     with aba1:
         st.info("O Valor Líquido será calculado: Custo + Impostos + Lucro")
 
@@ -150,8 +124,6 @@ if pagina == "Cadastrar Produto":
                 
             with col_id_2:
                 categoria = st.selectbox("Categoria", ["Geral", "Eletrônicos", "Vestuário", "Ferramentas", "Outros"])
-                
-                # --- AQUI ESTÁ A MUDANÇA: O SELECTBOX USA A LISTA DINÂMICA ---
                 fornecedor = st.selectbox("Fornecedor", lista_fornecedores)
                 
                 c_est1, c_est2 = st.columns(2)
@@ -176,19 +148,14 @@ if pagina == "Cadastrar Produto":
 
             botao_salvar = st.form_submit_button("Salvar Produto")
 
-        # --- LÓGICA DE SALVAR (MANUAL) ---
         if botao_salvar:
-            # 1. Validacao de Campos Vazios
             erros = []
             if not id_sku: erros.append("O SKU é obrigatório.")
             if not descricao: erros.append("A Descricao é obrigatória.")
-            
-            # 2. TRAVA DE SKU DUPLICADO
-            # Garante que dados_produtos esteja carregado (lógica global)
             try:
                 lista_skus = dados_produtos["id_sku"].astype(str).tolist()
             except:
-                lista_skus = [] # Se for o primeiro produto
+                lista_skus = []
 
             if str(id_sku) in lista_skus:
                 erros.append(f"ERRO CRÍTICO: O SKU '{id_sku}' já existe no sistema!")
@@ -197,10 +164,7 @@ if pagina == "Cadastrar Produto":
                 for erro in erros:
                     st.error(erro)
             else:
-                # Cálculo Automático
                 valor_liquido = preco_custo + icms + ipi + valor_st + lucro
-                
-                # Criacao da Linha
                 nova_linha = pd.DataFrame({
                     "id_sku": [id_sku],
                     "descricao": [descricao],
@@ -217,19 +181,12 @@ if pagina == "Cadastrar Produto":
                     "ativo": [True],
                     "data_cadastro": [datetime.now().strftime("%d/%m/%Y")]
                 })
-
-                # Salvar
                 dados_produtos = pd.concat([dados_produtos, nova_linha], ignore_index=True)
-                # Adicionei encoding='latin1' aqui para evitar o erro de Unicode no futuro
                 dados_produtos.to_csv("Base de Dados.csv", sep=";", index=False, encoding="latin1")
                 st.success(f"Produto {id_sku} cadastrado com sucesso!")
-                st.rerun() # Atualiza a tela para limpar
-
-    # --- ABA 2: IMPORTAcaO EM MASSA (CSV) ---
+                st.rerun()
     with aba2:
         st.header("Importar Produtos via CSV")
-        
-        # --- SEcaO DE INSTRUcÕES ---
         with st.expander("📖 Leia as instrucões antes de importar", expanded=False):
             st.markdown("""
             Para que a importacao funcione corretamente, seu arquivo deve seguir estas regras:
@@ -251,13 +208,10 @@ if pagina == "Cadastrar Produto":
             st.table(exemplo_dados)
         
         st.divider()
-        
-        # --- ÁREA DE UPLOAD ---
         arquivo_upload = st.file_uploader("Arraste seu arquivo CSV aqui", type=["csv"])
         
         if arquivo_upload is not None:
             try:
-                # Lendo o arquivo subido
                 try:
                     df_novo = pd.read_csv(arquivo_upload, sep=";")
                 except UnicodeDecodeError:
@@ -267,10 +221,7 @@ if pagina == "Cadastrar Produto":
                 st.dataframe(df_novo.head()) 
                 
                 if st.button("Confirmar Importacao"):
-                    # Verificacao de SKUs
                     skus_existentes = dados_produtos["id_sku"].astype(str).tolist()
-                    
-                    # Filtra apenas o que é novo
                     df_novo_filtrado = df_novo[~df_novo["id_sku"].astype(str).isin(skus_existentes)]
                     
                     qtd_total = len(df_novo)
@@ -280,56 +231,36 @@ if pagina == "Cadastrar Produto":
                     if qtd_novos > 0:
                         if "data_cadastro" not in df_novo_filtrado.columns:
                             df_novo_filtrado["data_cadastro"] = datetime.now().strftime("%d/%m/%Y")
-                        
-                        # Concatena e salva
                         dados_produtos = pd.concat([dados_produtos, df_novo_filtrado], ignore_index=True)
-                        # Salva com encoding seguro
                         dados_produtos.to_csv("Base de Dados.csv", sep=";", index=False, encoding="latin1")
                         
                         st.success(f"✅ Sucesso! {qtd_novos} novos produtos adicionados.")
                         if qtd_ignorados > 0:
                             st.warning(f"⚠️ {qtd_ignorados} produtos ignorados (SKU repetido).")
-                        
-                        # Recarrega a página após importar
                         st.rerun()
                     else:
                         st.error("❌ Todos os produtos deste arquivo já existem no banco de dados.")
                         
             except Exception as e:
                 st.error(f"Erro ao processar o arquivo: {e}")
-#Tela de Consulta de Produtos
 elif pagina == "Consultar Produto":
     st.title("Consulta de Produtos")
-
-    # Criamos duas colunas: uma estreita para os filtros e uma larga para o resultado
     col_filtros, col_resultado = st.columns([1, 3])
 
     with col_filtros:
         st.subheader("Filtros de Busca")
-        # Busca por SKU (Texto exato ou parcial)
         filtro_sku = st.text_input("Código SKU")
-        
-        # Busca por Descricao (Palavra-chave)
         filtro_desc = st.text_input("Descricao do Produto")
         
         st.divider()
         st.caption("Dica: A busca por descricao encontra palavras parciais (ex: 'azul' encontra 'Camiseta Azul').")
 
     with col_resultado:
-        # Criamos uma cópia dos dados para nao alterar o original durante o filtro
         df_filtrado = dados_produtos.copy()
-
-        # Lógica de Filtro em Tempo Real
         if filtro_sku:
-            # Filtra por SKU (transformando tudo em string para evitar erro)
             df_filtrado = df_filtrado[df_filtrado["id_sku"].astype(str).str.contains(filtro_sku, case=False, na=False)]
-        
         if filtro_desc:
-            # Filtra por Descricao (case=False ignora maiúsculas/minúsculas)
             df_filtrado = df_filtrado[df_filtrado["descricao"].astype(str).str.contains(filtro_desc, case=False, na=False)]
-
-        # Selecionamos apenas as colunas solicitadas
-        # Nota: Use os nomes exatos das colunas do seu CSV aqui
         colunas_exibicao = [
             "id_sku", 
             "descricao", 
@@ -338,12 +269,8 @@ elif pagina == "Consultar Produto":
             "lucro", 
             "valor_liquido"
         ]
-        
-        # Verificar se as colunas existem antes de exibir (para evitar erro de arquivo vazio)
         try:
             exibicao = df_filtrado[colunas_exibicao]
-            
-            # Renomear apenas para ficar bonito na tabela do usuário
             exibicao.columns = ["SKU", "DESCRIcaO", "FORNECEDOR", "CUSTO (R$)", "LUCRO (R$)", "VALOR LÍQUIDO (R$)"]
             
             st.subheader(f"Resultados ({len(exibicao)} encontrados)")
@@ -352,22 +279,19 @@ elif pagina == "Consultar Produto":
                 st.dataframe(
                     exibicao, 
                     use_container_width=True, 
-                    hide_index=True # Esconde aquela coluna de números 0, 1, 2...
+                    hide_index=True
                 )
             else:
                 st.warning("Nenhum produto encontrado com esses termos.")
                 
         except KeyError as e:
             st.error(f"Erro: Alguma coluna nao foi encontrada no CSV: {e}")
-# --- 5. TELA DE CADASTRO DE PESSOAS ---
+            
 elif pagina == "Cadastrar Pessoa":
     st.title("Cadastro de Clientes e Fornecedores")
-
-    # Tenta carregar a base de pessoas, se nao existir, cria uma vazia
     try:
         dados_pessoas = pd.read_csv("Base_Pessoas.csv", sep=";")
     except:
-        # Se o arquivo nao existir, cria o DataFrame com o cabecalho que definimos
         dados_pessoas = pd.DataFrame(columns=[
             "id_documento", "tipo_pessoa", "nome_razao", "nome_fantasia", 
             "rg_ie", "email", "telefone", "cep", "endereco", "numero", 
@@ -381,7 +305,6 @@ elif pagina == "Cadastrar Pessoa":
         
         with col_id_1:
             tipo_pessoa = st.selectbox("Tipo de Pessoa", ["Física", "Jurídica"])
-            # Muda o rótulo do campo conforme a escolha
             label_doc = "CPF (Obrigatório)" if tipo_pessoa == "Física" else "CNPJ (Obrigatório)"
             id_documento = st.text_input(label_doc)
             
@@ -424,16 +347,10 @@ elif pagina == "Cadastrar Pessoa":
             uf = st.selectbox("UF", ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"])
 
         botao_salvar_pessoa = st.form_submit_button("Finalizar Cadastro")
-
-    # --- LÓGICA DE SALVAR PESSOA ---
     if botao_salvar_pessoa:
         erros_pessoa = []
-        
-        # 1. Validacao de Documento e Nome
         if not id_documento: erros_pessoa.append("O campo CPF/CNPJ é obrigatório.")
         if not nome_razao: erros_pessoa.append(f"O campo {label_nome} é obrigatório.")
-        
-        # 2. Trava de Duplicidade
         if str(id_documento) in dados_pessoas["id_documento"].astype(str).tolist():
             erros_pessoa.append(f"Este documento ({id_documento}) já está cadastrado no sistema!")
 
@@ -441,7 +358,7 @@ elif pagina == "Cadastrar Pessoa":
             for erro in erros_pessoa:
                 st.error(erro)
         else:
-            # 3. Criar nova linha
+
             nova_pessoa = pd.DataFrame({
                 "id_documento": [id_documento],
                 "tipo_pessoa": [tipo_pessoa],
@@ -463,23 +380,22 @@ elif pagina == "Cadastrar Pessoa":
                 "data_cadastro": [datetime.now().strftime("%d/%m/%Y")]
             })
 
-            # 4. Salvar no CSV
+
             dados_pessoas = pd.concat([dados_pessoas, nova_pessoa], ignore_index=True)
             dados_pessoas.to_csv("Base_Pessoas.csv", sep=";", index=False)
             
             st.success(f"✅ {tipo_pessoa} '{nome_razao}' cadastrada com sucesso!")
-# --- 6. TELA DE CONSULTA DE PESSOAS ---
+
 elif pagina == "Consultar Pessoa":
     st.title("Consulta de Clientes / Fornecedores")
 
-    # 1. Carregar os dados
+
     try:
         dados_pessoas = pd.read_csv("Base_Pessoas.csv", sep=";")
     except:
         st.warning("Nenhuma base de pessoas encontrada. Cadastre alguém primeiro!")
-        st.stop() # Para a execucao aqui caso nao haja arquivo
-
-    # 2. Layout de Colunas
+        st.stop()
+        
     col_filtros, col_resultado = st.columns([1, 3])
 
     with col_filtros:
@@ -497,10 +413,8 @@ elif pagina == "Consultar Pessoa":
         st.caption("A busca por nome funciona com termos parciais.")
 
     with col_resultado:
-        # Criamos a cópia para filtrar
-        df_p_filtrado = dados_pessoas.copy()
 
-        # Lógica de Filtro em Tempo Real
+        df_p_filtrado = dados_pessoas.copy()
         if filtro_doc:
             df_p_filtrado = df_p_filtrado[df_p_filtrado["id_documento"].astype(str).str.contains(filtro_doc, na=False)]
         
@@ -508,10 +422,8 @@ elif pagina == "Consultar Pessoa":
             df_p_filtrado = df_p_filtrado[df_p_filtrado["nome_razao"].astype(str).str.contains(filtro_nome, case=False, na=False)]
         
         if filtro_cat:
-            # Filtra se a categoria está na lista selecionada no multiselect
             df_p_filtrado = df_p_filtrado[df_p_filtrado["categoria"].isin(filtro_cat)]
 
-        # Selecao de Colunas para a Tabela (O que o usuário precisa ver rápido)
         colunas_ver = [
             "id_documento",
             "nome_razao",
@@ -525,7 +437,6 @@ elif pagina == "Consultar Pessoa":
         try:
             exibicao_p = df_p_filtrado[colunas_ver]
             
-            # Renomeando para ficar apresentável
             exibicao_p.columns = ["DOCUMENTO", "NOME / RAZaO SOCIAL", "CATEGORIA", "E-MAIL", "CONTATO", "CIDADE", "STATUS"]
 
             st.subheader(f"Registros Encontrados ({len(exibicao_p)})")
@@ -537,7 +448,6 @@ elif pagina == "Consultar Pessoa":
                     hide_index=True
                 )
                 
-                # Widget extra: Ver detalhes completos
                 if len(exibicao_p) == 1:
                     st.info("💡 Apenas um registro encontrado. Você pode ver todos os dados dele na tabela acima arrastando a barra de rolagem.")
             else:
@@ -546,21 +456,17 @@ elif pagina == "Consultar Pessoa":
         except KeyError as e:
             st.error(f"Erro nas colunas do arquivo: {e}")
 
-# --- 7. TELA DE PEDIDOS (VERSAO ULTRA COMPATIVEL) ---
 elif pagina == "Criar Pedido":
     st.title("Central de Pedidos")
 
     import unicodedata
 
-    # Função para remover acentos, cedilhas e caracteres incompatíveis
     def limpar_texto(txt):
         if not txt or txt == 'nan': return ""
-        # 1. Substituir Enters pelo seu separador escolhido
+
         txt = txt.replace("\n", "  |  ").replace("\r", "  |  ")
-        # 2. Normalizar e remover acentos/cedilhas
         nfkd_form = unicodedata.normalize('NFKD', txt)
         txt = "".join([c for c in nfkd_form if not unicodedata.combining(c)])
-        # 3. Remover o ponto e vírgula para não confundir com o separador do CSV
         txt = txt.replace(";", ",")
         return txt.strip()
 
@@ -570,15 +476,12 @@ elif pagina == "Criar Pedido":
         except UnicodeDecodeError:
             return pd.read_csv(caminho, sep=";", encoding="latin-1")
 
-    # --- INICIALIZACAO DE ESTADOS ---
     if "carrinho" not in st.session_state:
         st.session_state.carrinho = []
     if "cliente_selecionado" not in st.session_state:
         st.session_state.cliente_selecionado = None
     if "produto_selecionado" not in st.session_state:
         st.session_state.produto_selecionado = None
-
-    # Logica de ID Sequencial
     if os.path.exists("Base_Pedido.csv"):
         try:
             base_pedidos_temp = ler_csv_safe("Base_Pedido.csv")
@@ -589,8 +492,6 @@ elif pagina == "Criar Pedido":
         proximo_id = 1
 
     st.subheader(f"Pedido Nº: {proximo_id}")
-
-    # --- FUNCOES DE BUSCA (DIALOGS) ---
     @st.dialog("Buscar Cliente")
     def buscar_cliente_pop():
         st.write("Pesquise e selecione o cliente.")
@@ -628,8 +529,6 @@ elif pagina == "Criar Pedido":
                     st.rerun()
         else:
             st.error("Base de Produtos nao encontrada!")
-
-    # --- ÁREA 1: IDENTIFICACAO DO CLIENTE ---
     with st.container(border=True):
         col_cli_1, col_cli_2 = st.columns([3, 1])
         with col_cli_1:
@@ -643,8 +542,6 @@ elif pagina == "Criar Pedido":
         if st.session_state.cliente_selecionado:
             c = st.session_state.cliente_selecionado
             st.success(f"✅ **{c['nome_razao']}** | {c['cidade']}-{c['uf']} | Limite: R$ {c['limite_credito']}")
-
-    # --- ÁREA 2: INCLUSAO DE PRODUTOS ---
     with st.container(border=True):
         st.write("### Adicionar Itens")
         col_prod_1, col_prod_2, col_prod_3 = st.columns([2, 1, 1])
@@ -692,8 +589,6 @@ elif pagina == "Criar Pedido":
                     })
                     st.session_state.produto_selecionado = None
                     st.rerun()
-
-    # --- ÁREA 3: REVISAO E FINALIZACAO ---
     if st.session_state.carrinho:
         st.divider()
         st.subheader("🛒 Resumo do Pedido")
@@ -723,7 +618,6 @@ elif pagina == "Criar Pedido":
                 if not st.session_state.cliente_selecionado:
                     st.error("Selecione um cliente!")
                 else:
-                    # APLICANDO A LIMPEZA PESADA NAS OBSERVACOES E NOMES
                     obs_limpa = limpar_texto(obs)
                     cliente_limpo = limpar_texto(st.session_state.cliente_selecionado['nome_razao'])
                     
@@ -750,14 +644,12 @@ elif pagina == "Criar Pedido":
                     st.session_state.carrinho = []
                     st.session_state.cliente_selecionado = None
                     st.rerun()
-# --- 8. TELA DE CONSULTA DE PEDIDOS (COM EDIcaO VIA POPUP) ---
-## --- 8. TELA DE CONSULTA DE PEDIDOS (VERSÃO AJUSTADA E ROBUSTA) ---
+                    
 elif pagina == "Consultar Pedido":
-    st.title("🔎 Gestao e Consulta de Pedidos")
+    st.title("Gestao e Consulta de Pedidos")
 
     import unicodedata
 
-    # Função de limpeza repetida para garantir consistência no salvamento da edição
     def limpar_texto_local(txt):
         if not txt or str(txt).lower() == 'nan': return ""
         txt = str(txt).replace("\n", "  |  ").replace("\r", "  |  ")
@@ -766,14 +658,11 @@ elif pagina == "Consultar Pedido":
         txt = txt.replace(";", ",")
         return txt.strip()
 
-    # 1. Carregamento e Padronizacao com tratamento de erro numérico
     try:
-        # Lendo com latin-1 para suportar caracteres do Windows/Excel
         df_pedidos = pd.read_csv("Base_Pedido.csv", sep=";", encoding="latin-1")
         df_produtos = pd.read_csv("Base de Dados.csv", sep=";", encoding="latin-1")
         df_pessoas = pd.read_csv("Base_Pessoas.csv", sep=";", encoding="latin-1")
         
-        # --- CORREÇÃO DE TIPOS (Evita o erro de soma str + float) ---
         df_pedidos['valor_final'] = pd.to_numeric(df_pedidos['valor_final'], errors='coerce').fillna(0.0)
         df_pedidos['qtd'] = pd.to_numeric(df_pedidos['qtd'], errors='coerce').fillna(0).astype(int)
         df_pedidos['frete_total'] = pd.to_numeric(df_pedidos['frete_total'], errors='coerce').fillna(0.0)
@@ -782,14 +671,12 @@ elif pagina == "Consultar Pedido":
         df_produtos['id_sku'] = df_produtos['id_sku'].astype(str)
         df_pedidos['doc_cliente'] = df_pedidos['doc_cliente'].astype(str)
         
-        # Tratamento de data
         df_pedidos['data_pedido_dt'] = pd.to_datetime(df_pedidos['data_pedido'], format="%d/%m/%Y %H:%M", errors='coerce')
         
     except Exception as e:
         st.error(f"Erro ao carregar bases: {e}")
         st.stop()
 
-    # 2. Layout Lateral (Filtros)
     col_filtros, col_detalhe = st.columns([1, 2.5])
 
     with col_filtros:
@@ -805,7 +692,6 @@ elif pagina == "Consultar Pedido":
         lista_ids = df_f["id_pedido"].unique()
         id_selecionado = st.selectbox("Selecione o Pedido", sorted(lista_ids, reverse=True)) if len(lista_ids) > 0 else None
 
-    # 3. Coluna de Detalhes / Edicao
     with col_detalhe:
         if id_selecionado:
             if "modo_edicao" not in st.session_state:
@@ -813,7 +699,6 @@ elif pagina == "Consultar Pedido":
 
             itens_venda = df_pedidos[df_pedidos["id_pedido"] == id_selecionado]
             
-            # --- MODO EDIÇÃO ---
             if st.session_state.modo_edicao:
                 st.warning("⚠️ MODO DE EDIÇÃO ATIVADO")
                 
@@ -827,13 +712,12 @@ elif pagina == "Consultar Pedido":
                         })
                     st.session_state.edit_frete = float(itens_venda.iloc[0]["frete_total"])
                     st.session_state.edit_tipo = itens_venda.iloc[0]["tipo"]
-                    # Volta o " | " para "Enter" na área de texto para facilitar a edição
                     obs_original = str(itens_venda.iloc[0]["observacao"]).replace("  |  ", "\n")
                     st.session_state.edit_obs = obs_original
 
                 ce1, ce2, ce3 = st.columns([1, 1, 1])
                 novo_tipo = ce1.selectbox("Tipo", ["ORCAMENTO", "PEDIDO", "COTACAO"], 
-                                         index=["ORCAMENTO", "PEDIDO", "COTACAO"].index(st.session_state.edit_tipo) if st.session_state.edit_tipo in ["ORCAMENTO", "PEDIDO", "COTACAO"] else 0)
+                                           index=["ORCAMENTO", "PEDIDO", "COTACAO"].index(st.session_state.edit_tipo) if st.session_state.edit_tipo in ["ORCAMENTO", "PEDIDO", "COTACAO"] else 0)
                 novo_frete = ce2.number_input("Frete (R$)", value=st.session_state.edit_frete)
                 
                 if ce3.button("❌ CANCELAR", use_container_width=True):
@@ -856,7 +740,6 @@ elif pagina == "Consultar Pedido":
                         st.rerun()
 
                 if st.button("SALVAR ALTERAÇÕES ✅", use_container_width=True, type="primary"):
-                    # Remove o pedido antigo e insere os itens novos
                     df_base_limpa = df_pedidos[df_pedidos["id_pedido"] != id_selecionado].copy()
                     origem = itens_venda.iloc[0]
                     
@@ -885,11 +768,9 @@ elif pagina == "Consultar Pedido":
                     st.success("Pedido atualizado com sucesso!")
                     st.rerun()
 
-            # --- MODO LEITURA (CONSULTA) ---
             else:
                 itens_completos = itens_venda.merge(df_produtos[['id_sku', 'descricao', 'marca']], left_on='sku_item', right_on='id_sku', how='left')
                 
-                # Cálculos protegidos contra erros de tipo
                 frete = float(itens_venda.iloc[0]["frete_total"])
                 soma_itens = (itens_completos["valor_final"] * itens_completos["qtd"]).sum()
                 total = soma_itens + frete
@@ -913,21 +794,18 @@ elif pagina == "Consultar Pedido":
                 
                 obs = itens_venda.iloc[0]['observacao']
                 if pd.notna(obs) and str(obs).lower() != 'nan' and str(obs).strip() != "":
-                    # Mostra a observação com "Enter" na tela de consulta para ficar bonito
                     st.info(f"**Observações:**\n\n{str(obs).replace('  |  ', '\n')}")
         else:
             st.info("💡 Selecione um pedido na lista à esquerda para ver os detalhes.")
-### --- 9. TELA DE FORMALIZAcaO DE PROPOSTA (CORRIGIDA) --- 
+
 elif pagina == "Formalizacao":
     st.title("Formalizacao de Proposta")
     
-    # 1. Carregamento e Padronizacao
     try:
         df_pedidos = pd.read_csv("Base_Pedido.csv", sep=";")
         df_produtos = pd.read_csv("Base de Dados.csv", sep=";")
         df_pessoas = pd.read_csv("Base_Pessoas.csv", sep=";")
         
-        # Conversao de tipos para garantir o cruzamento (merge)
         df_pedidos['id_pedido'] = df_pedidos['id_pedido'].astype(int)
         df_pedidos['sku_item'] = df_pedidos['sku_item'].astype(str)
         df_produtos['id_sku'] = df_produtos['id_sku'].astype(str)
@@ -938,24 +816,19 @@ elif pagina == "Formalizacao":
         st.error(f"Erro ao carregar bases: {e}")
         st.stop()
 
-    # 2. Selecao do Pedido
     id_escolhido = st.selectbox("Selecione o Número do Pedido", lista_pedidos, index=None, placeholder="Escolha um pedido...")
 
     if id_escolhido:
-        # Filtra dados do Pedido
         dados_venda = df_pedidos[df_pedidos["id_pedido"] == id_escolhido]
         doc_cliente = str(dados_venda.iloc[0]["doc_cliente"])
         
-        # AJUSTE NAS COLUNAS: Usando apenas o que existe no seu CSV (id_sku, descricao, marca, preco_custo)
         itens_completos = dados_venda.merge(
             df_produtos[['id_sku', 'descricao', 'marca', 'preco_custo']], 
             left_on='sku_item', right_on='id_sku', how='left'
         )
         
-        # Dados do Cliente
         cliente_info = df_pessoas[df_pessoas["id_documento"] == doc_cliente].iloc[0]
 
-        # --- PAINEL DE CONFERÊNCIA ---
         with st.container(border=True):
             st.subheader(f"Resumo: Pedido #{id_escolhido}")
             c1, c2 = st.columns(2)
@@ -965,12 +838,10 @@ elif pagina == "Formalizacao":
                 st.caption(f"📍 {cliente_info['endereco']}, {cliente_info['numero']} - {cliente_info['cidade']}/{cliente_info['uf']}")
             with c2:
                 custo_total = (itens_completos['preco_custo'] * itens_completos['qtd']).sum()
-                # Soma subtotal dos itens + o frete único do pedido
                 venda_total = (itens_completos['valor_final'] * itens_completos['qtd']).sum() + float(dados_venda.iloc[0]['frete_total'])
                 st.metric("Total Venda (c/ Frete)", f"R$ {venda_total:.2f}")
                 st.write(f"**Custo Total Est.:** R$ {custo_total:.2f}")
 
-            # Exibicao da Observacao do Pedido
             obs_pedido = dados_venda.iloc[0]['observacao']
             if pd.notna(obs_pedido) and str(obs_pedido).lower() != 'nan':
                 st.warning(f"📝 **Observacao do Pedido:** {obs_pedido}")
@@ -980,7 +851,6 @@ elif pagina == "Formalizacao":
 
         st.divider()
 
-        # 3. Inputs Manuais para o Documento
         st.subheader("Dados Adicionais para Proposta_Modelo")
         with st.form("form_formalizacao"):
             f1, f2 = st.columns(2)
@@ -995,7 +865,6 @@ elif pagina == "Formalizacao":
             
             botao_gerar = st.form_submit_button("Gerar Proposta (Word)", use_container_width=True)
 
-        # 4. Geracao do Word
         if botao_gerar:
             if not all([n_pregao, validade, prazo, especificacoes]):
                 st.error("Preencha todos os campos obrigatórios para gerar o documento.")
@@ -1004,10 +873,8 @@ elif pagina == "Formalizacao":
                     from num2words import num2words
                     doc = Document("Proposta_Modelo.docx")
                     
-                    # Valor por extenso
                     valor_extenso = num2words(venda_total, lang='pt_BR', to='currency').upper()
 
-                    # Substituicao de Tags
                     subs = {
                         "[Razao_UASG]": cliente_info['nome_razao'],
                         "[N_pregao]": n_pregao,
@@ -1024,7 +891,6 @@ elif pagina == "Formalizacao":
                             if tag in p.text:
                                 p.text = p.text.replace(tag, str(val))
 
-                    # Preenchimento da Tabela
                     if doc.tables:
                         tabela = doc.tables[0]
                         for i, it in itens_completos.iterrows():
@@ -1032,7 +898,7 @@ elif pagina == "Formalizacao":
                             cells[0].text = str(i + 1)
                             cells[1].text = str(it['descricao'])
                             cells[2].text = str(it['marca'])
-                            cells[3].text = "---" # PartNumber nao existe no seu CSV, deixamos fixo ou vazio
+                            cells[3].text = "---" 
                             cells[4].text = str(it['qtd'])
                             cells[5].text = f"R$ {it['valor_final']:.2f}"
                             cells[6].text = f"R$ {(it['valor_final'] * it['qtd']):.2f}"
@@ -1047,7 +913,6 @@ elif pagina == "Formalizacao":
                 except Exception as e:
                     st.error(f"Erro na geracao do documento: {e}")
 
-# --- TELA 0. DASHBOARD (VERSÃO INTEGRAL OTIMIZADA COM INDICADORES FINANCEIROS REAIS) ---
 elif pagina == "Dashboard":
     st.title("BI e Dashboard de Vendas")
 
@@ -1093,7 +958,6 @@ elif pagina == "Dashboard":
 
         if not df_produtos.empty:
             df_produtos['id_sku'] = df_produtos['id_sku'].astype(str)
-            # Traz todas as colunas de produtos para garantir que 'preco_custo' e % de lucro venham
             cols_prod = [c for c in df_produtos.columns if c not in df_mestre.columns or c == 'id_sku']
             df_mestre = pd.merge(df_mestre, df_produtos[cols_prod], left_on='sku_item', right_on='id_sku', how='left')
         
@@ -1101,7 +965,6 @@ elif pagina == "Dashboard":
         df_mestre['qtd'] = pd.to_numeric(df_mestre['qtd'], errors='coerce').fillna(0)
         df_mestre['data_pedido_dt'] = pd.to_datetime(df_mestre['data_pedido'], dayfirst=True, errors='coerce')
         
-        # --- CORREÇÃO: Faturamento do Item = Preço Unitário * Quantidade ---
         df_mestre['faturamento_item'] = df_mestre['valor_final'] * df_mestre['qtd']
 
         with st.expander("Filtros de Pesquisa Avançada", expanded=True):
@@ -1123,12 +986,10 @@ elif pagina == "Dashboard":
                 with s1: sku_f = st.text_input("SKU do Item", value=st.session_state.get('sku_filtro_db', ""))
                 with s2:
                     if st.button("🔍", key="btn_sku_db"): pesquisar_produto_dialog()
-                # ADICIONADO AQUI: Filtro de Categoria/Tipo de Pedido
                 tipo_pedido_f = st.multiselect("Categoria / Tipo", list(df_mestre['tipo'].dropna().unique()))
             with f_col4:
                 cidade_f = st.text_input("Cidade")
                 estado_f = st.text_input("Estado (UF)")
-                # Slider ajustado para o Faturamento real
                 v_min, v_max = float(df_mestre['faturamento_item'].min() or 0), float(df_mestre['faturamento_item'].max() or 100)
                 faixa_preco = st.slider("Faixa de Valor (R$)", v_min, v_max, (v_min, v_max))
 
@@ -1139,9 +1000,8 @@ elif pagina == "Dashboard":
         if estado_f: df_f = df_f[df_f['uf'].str.contains(estado_f, case=False, na=False)]
         if sku_f: df_f = df_f[df_f['sku_item'].str.contains(sku_f, case=False, na=False)]
         if tipo_p_f != "Todos": df_f = df_f[df_f['tipo_pessoa'] == tipo_p_f]
-        if tipo_pedido_f: df_f = df_f[df_f['tipo'].isin(tipo_pedido_f)] # ADICIONADA A LÓGICA DO FILTRO AQUI
+        if tipo_pedido_f: df_f = df_f[df_f['tipo'].isin(tipo_pedido_f)]
 
-        # --- INDICADORES DE PERFORMANCE ---
         st.subheader("Indicadores de Performance")
         i1, i2, i3 = st.columns(3)
         
@@ -1149,16 +1009,13 @@ elif pagina == "Dashboard":
         qtd_total = df_f['qtd'].sum()
         ped_unicos = df_f['id_pedido'].nunique()
         
-        # --- CORREÇÃO: Lógica de Custo e Lucro ---
         col_lucro = next((c for c in df_f.columns if 'lucro' in c.lower() or 'margem' in c.lower()), None)
         if col_lucro:
-            # Se achar a coluna de %, aplica sobre o faturamento do item
             df_f[col_lucro] = pd.to_numeric(df_f[col_lucro], errors='coerce').fillna(0)
             mult = df_f[col_lucro].apply(lambda x: x / 100 if x > 1 else x)
             lucro = (df_f['faturamento_item'] * mult).sum()
             custo_total = fat_total - lucro
         elif 'preco_custo' in df_f:
-            # Se não achar a %, usa o custo unitário multiplicado pela quantidade
             df_f['preco_custo'] = pd.to_numeric(df_f['preco_custo'], errors='coerce').fillna(0)
             custo_total = (df_f['preco_custo'] * df_f['qtd']).sum()
             lucro = fat_total - custo_total
@@ -1178,7 +1035,6 @@ elif pagina == "Dashboard":
             st.metric("Custo Total", f"R$ {custo_total:,.2f}")
             st.metric("Média Itens/Pedido", f"{(qtd_total/ped_unicos if ped_unicos > 0 else 0):,.1f}")
 
-        # --- GRÁFICOS ESTRATÉGICOS (AJUSTADOS PARA VERMELHO E SEM MARGENS) ---
         st.subheader("Análises Estratégicas")
         g1, g2 = st.columns(2)
         with g1:
@@ -1197,7 +1053,6 @@ elif pagina == "Dashboard":
         with g2:
             st.write("**2. Evolução Faturamento Diário**")
             ev = df_f.groupby(df_f['data_pedido_dt'].dt.date)['faturamento_item'].sum().reset_index()
-            # Usando o vermelho padrão do Plotly (Coral) para a área
             fig_area = px.area(ev, x='data_pedido_dt', y='faturamento_item', markers=True, color_discrete_sequence=['#ef553b'])
             fig_area.update_layout(margin=dict(l=0, r=0, t=0, b=0))
             st.plotly_chart(fig_area, use_container_width=True)
@@ -1211,4 +1066,5 @@ elif pagina == "Dashboard":
 
         st.divider(); st.write("**Detalhamento**")
         st.dataframe(df_f.drop(columns=['data_pedido_dt', 'id_sku', 'id_documento'], errors='ignore'), use_container_width=True, hide_index=True)
+
         st.download_button("📥 Exportar Relatório", df_f.to_csv(index=False, sep=';', encoding='latin-1'), "bi.csv", "text/csv")
